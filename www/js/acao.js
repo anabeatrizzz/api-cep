@@ -4,7 +4,7 @@ $(function(){
   $("#buscar").click(function(){
     var cep = $("#cep").val();
     $.ajax({
-      type: "POST",
+      type: "get",
       url: `https://viacep.com.br/ws/${cep}/json/`,
       success: function(retorno){
         var conteudo = `\
